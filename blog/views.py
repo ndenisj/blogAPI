@@ -8,3 +8,6 @@ def blog_list(request):
         'description': 'This is a detailed description based on the title above.'
     }
     return JsonResponse(context)
+
+def home(request):
+    return render(request, 'blog/index.html')
